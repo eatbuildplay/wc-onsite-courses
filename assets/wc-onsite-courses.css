@@ -1,0 +1,103 @@
+/*
+ * Course date selection
+ */
+ #onsite-course-dates {
+   margin: 25px 0 0 0;
+   background: #F2F2F2;
+   padding: 30px 25px;
+ }
+
+.course-date-selector {
+  width: 100%;
+  cursor: pointer;
+  margin: 30px 0 30px 0;
+}
+.course-date-selector th {
+  font-size: 18px;
+}
+.course-date-selector.selected,
+.course-date-selector.selected:hover {
+  color: #FFF;
+  background: #C4161D;
+}
+.course-date-selector:hover {
+  color: #FFF;
+  background: #b2bec3;
+}
+
+/*
+ * Course products
+ */
+#onsite-courses-cart-button {
+  width: 100%;
+  display: inline-block;
+  padding: 25px;
+  margin: 30px 0 30px 0;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#onsite-course-products {
+  margin: 25px 0 0 0;
+  background: #F2F2F2;
+  padding: 30px 25px;
+}
+
+#onsite-course-products input[type=checkbox] {
+  width:25px;
+  height: 25px;
+}
+#onsite-course-products table {
+  margin: 30px 0 30px 0;
+}
+#onsite-course-products table,
+#onsite-course-products table tr {
+  width: 100%;
+}
+#onsite-course-products table td {
+  width: 100%;
+}
+tr.course-product-row {
+  cursor: pointer;
+}
+tr.course-product-row:hover {
+  background: #F7F7F7;
+}
+tr.course-product-row.selected {
+  background: #C4161D;
+  color: #FFF;
+}
+tr.course-product-row.selected h3 {
+  color: #FFF;
+}
+
+tr.course-product-row h3 {
+  font-size: 18px;
+}
+
+#onsite-courses-cart-messages {
+  display: none;
+  padding: 30px;
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* loading overlay */
+#loading {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #00000035;
+  text-align: center;
+  padding-top: 40vh;
+}
+#loading img {
+  max-width:180px;
+  border: solid 25px #FFF;
+}
