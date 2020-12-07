@@ -193,9 +193,9 @@ class WC_Onsite_Courses_Plugin {
           $courseDate['title'] = $productPost->post_title;
           $courseDate['product_url'] = get_permalink( $productPost );
           $startTimeObj = DateTime::createFromFormat( 'm-d-Y g:i a', $date. ' ' . $startTime );
-          $courseDate['start'] = $startTimeObj->format('Y-m-d h:m:s');
+          $courseDate['start'] = $startTimeObj->format('Y-m-d h:i:s');
           $endTimeObj = DateTime::createFromFormat( 'm-d-Y g:i a', $date . ' ' . $endTime );
-          $courseDate['end'] = $endTimeObj->format('Y-m-d h:m:s');
+          $courseDate['end'] = $endTimeObj->format('Y-m-d h:i:s');
           $courseDates[] = $courseDate;
 
         }

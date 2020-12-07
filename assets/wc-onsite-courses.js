@@ -64,7 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log( info.event.extendedProps )
       info.el.querySelector('.fc-title').innerHTML = '<a href="' + info.event.url + '"><div>' + info.event.title + ' - <i>' + info.event.extendedProps.description + '</i></div></a>';
     },
-    events: events
+    events: events,
+    meridiem: 'short',
+    omitZeroMinute: false
   });
 
   calendar.render();
